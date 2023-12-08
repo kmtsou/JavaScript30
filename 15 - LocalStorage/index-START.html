@@ -40,6 +40,7 @@
     }
     items.push(item)
     populateList(items, itemsList)
+    localStorage.addItem('items', JSON.stringify(items))
     this.reset();
   }
 
@@ -54,7 +55,7 @@
     }).join('');
   }
 
-  addItems.addEventListener('submit', )
+  addItems.addEventListener('submit', addItem)
 
 </script>
 
