@@ -28,7 +28,8 @@
     const height = Math.round(percent * 100) + '%'
     const playbackRate = percent * (max - min) + min
     bar.style.height = height
-    console.log(y)
+    bar.textContent = playbackRate.toFixed(2) + 'x'
+    video.playbackRate = playbackRate
   })
 </script>
 </body>
